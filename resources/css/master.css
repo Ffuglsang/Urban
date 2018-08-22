@@ -46,4 +46,18 @@ section img {
   margin: auto;
 }
 
+.left {
+  grid-column: 1 / 7;
+}
+.left figure img {
+  width: 100%;
+}
+
+.right {
+  grid-column: 7 / 13;
+}
+.right figure img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=master.css.map */
