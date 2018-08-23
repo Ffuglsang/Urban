@@ -68,3 +68,8 @@
 .right figure img {
   width: 100%;
 }
+
+#contact {
+  grid-columns: 1 / 7;
+  grid-row: 1 / 2;
+}
