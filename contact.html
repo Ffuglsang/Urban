@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Kontakt os - Urban streetware for metro's</title>
-    <link rel="stylesheet" href="resources/css/master.css" />
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Kontakt os - Urban streetware</title>
   </head>
   <body>
     <div id="gridContainer">
@@ -27,6 +30,44 @@
                 <img src="resources/img/urbanfront.jpg" alt="Front">
             </figure>
         </section>
+
+        <section id="contact">
+          <div class="faqLeft">
+  <h1>Vi her her for at hjælpe dig</h1>
+  <h2>Her er nogle af de mest stillede spørgsmål</h2>
+  <ul>
+    <li>
+      <h3>spørgsmål 1 <i class="fas fa-angle-right"></i></h3>
+      <div class="faqSlide">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </li>
+    <li>
+      <h3>spørgsmål 2 <i class="fas fa-angle-right"></i></h3>
+      <div class="faqSlide">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </li>
+    <li>
+      <h3>spørgsmål 3 <i class="fas fa-angle-right"></i></h3>
+      <div class="faqSlide">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+        </section>
       </div>
   </body>
+
+  <script>
+  $(function() {
+    $('.faqLeft ul li').click(function() {
+      $(this).find('.faqSlide').slideToggle();
+      $(this).find('h3 i').toggleClass('slideActive');
+      $(this).siblings().find('.faqSlide').slideUp();
+      $(this).siblings().find('h3 i').removeClass('slideActive');
+    });
+  });
+</script>
 </html>
