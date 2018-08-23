@@ -41,7 +41,7 @@
   grid-column: 1 / 13;
   grid-row: 2 / 3;
 }
-#indexSection img {
+#indexSection figure img {
   width: 100%;
   margin: auto;
 }
