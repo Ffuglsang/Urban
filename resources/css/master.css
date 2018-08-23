@@ -1,0 +1,63 @@
+#gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+}
+header figure {
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+}
+header figure img {
+  width: 40%;
+}
+header nav {
+  grid-column: 7 / 13;
+  grid-row: 1 / 2;
+  text-align: right;
+}
+header nav ul {
+  padding: 50px 30px 0 0;
+}
+header nav ul li {
+  display: inline;
+  text-decoration: none;
+  padding: 0 30px 0 0;
+}
+header nav ul li a {
+  color: #8c7965;
+  text-decoration: none;
+}
+
+section {
+  grid-column: 1 / 13;
+  grid-row: 2 / 3;
+}
+section img {
+  width: 100%;
+  margin: auto;
+}
+
+.left {
+  grid-column: 1 / 7;
+}
+.left figure img {
+  width: 100%;
+}
+
+.right {
+  grid-column: 7 / 13;
+}
+.right figure img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=master.css.map */
