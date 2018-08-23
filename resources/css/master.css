@@ -5,43 +5,43 @@
   font-family: "Open Sans", sans-serif;
 }
 
-header {
+#indexHeader {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-column: 1 / 13;
   grid-row: 1 / 2;
 }
-header figure {
+#indexHeader figure {
   grid-column: 1 / 7;
   grid-row: 1 / 2;
 }
-header figure img {
+#indexHeader figure img {
   width: 40%;
 }
-header nav {
+#indexHeader nav {
   grid-column: 7 / 13;
   grid-row: 1 / 2;
   text-align: right;
 }
-header nav ul {
+#indexHeader nav ul {
   padding: 50px 30px 0 0;
 }
-header nav ul li {
+#indexHeader nav ul li {
   display: inline;
   text-decoration: none;
   padding: 0 30px 0 0;
 }
-header nav ul li a {
+#indexHeader nav ul li a {
   color: #8c7965;
   text-decoration: none;
 }
 
-section {
+indexSection {
   grid-column: 1 / 13;
   grid-row: 2 / 3;
 }
-section img {
+indexSection img {
   width: 100%;
   margin: auto;
 }
