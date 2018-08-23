@@ -5,7 +5,7 @@
     font-family: $openSans;
 }
 
-header {
+#indexHeader {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -43,7 +43,7 @@ header {
     }
 }
 
-section {
+indexSection {
     grid-column: 1 / 13;
     grid-row: 2 / 3;
     
